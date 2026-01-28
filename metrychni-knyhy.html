@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог метричних книг Дубровиці для генеалогічних досліджень">
+  <title>Метричні книги - Історичний портал Дубровиці</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <a href="index.html" class="site-logo">
+        <div class="site-logo-icon">Д</div>
+        <span class="site-title">Дубровиця</span>
+      </a>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="history.html" class="nav-link">Історія</a>
+        <a href="photo-archive.html" class="nav-link">Фотоархів</a>
+        <a href="metrychni-knyhy.html" class="nav-link active">Метричні книги</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+    </div>
+  </header>
+
+  <!-- ============================================
+       МЕТРИЧНІ КНИГИ
+       ============================================ -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-label">Genealogy</span>
+        <h1 class="section-title">Метричні книги Дубровиці</h1>
+        <p class="section-description">
+          Каталог метричних книг для генеалогічних досліджень. Використовуйте пошук, 
+          щоб знайти записи про своїх предків.
+        </p>
+      </div>
+
+      <!-- ============================================
+           ПОШУК
+           Автоматичний пошук працює через JavaScript
+           ============================================ -->
+      <div class="records-search">
+        <input 
+          type="text" 
+          class="search-input" 
+          placeholder="Пошук за парафією, роками або місцевістю..."
+          aria-label="Пошук метричних книг"
+        >
+      </div>
+
+      <!-- Інформаційний блок -->
+      <div style="margin-bottom: 3rem; padding: 1.5rem; background-color: #fffbf0; border-left: 4px solid var(--accent-gold); border-radius: 2px;">
+        <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Як користуватися каталогом</h3>
+        <p style="margin-bottom: 0.5rem;">
+          <strong>Метричні книги</strong> — це церковні записи про хрещення, шлюби та смерті. 
+          Вони є найважливішим джерелом для генеалогічних досліджень.
+        </p>
+        <p style="margin-bottom: 0;">
+          Використовуйте пошук вище, щоб знайти записи за назвою парафії, роками або місцевістю. 
+          Клікніть на посилання, щоб переглянути скановані копії в державних архівах.
+        </p>
+      </div>
+
+      <!-- ============================================
+           КАТАЛОГ МЕТРИЧНИХ КНИГ
+           
+           ЯК ДОДАТИ НОВИЙ ЗАПИС:
+           1. Скопіюйте блок <div class="record-item">
+           2. Змініть назву парафії
+           3. Змініть роки та тип записів
+           4. Додайте посилання на архів
+           ============================================ -->
+      <div class="records-list">
+        
+        <!-- Запис 1 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Свято-Михайлівська парафія, Дубровиця
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1825-1915
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби, смерті
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Православна
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Метричні книги містять записи про мешканців Дубровиці та навколишніх сіл. 
+            Збереглися практично повністю, з невеликими лакунами у 1860-х роках.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в Державному архіві Рівненської області
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 2 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Різдво-Богородицька парафія, Дубровиця
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1795-1865
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Православна
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Одна з найстаріших парафій міста. Книги містять записи про селян та міщан. 
+            Частково пошкоджені, але більшість записів читабельні.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 3 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Римо-католицька парафія Святої Анни, Дубровиця
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1850-1939
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби, смерті
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Римо-католицька
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Записи польської католицької громади Дубровиці. Книги ведені латиною та польською мовою. 
+            Добре збереглися.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 4 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Єврейська громада, Дубровиця
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1875-1941
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Іудейська
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Метричні книги єврейської громади міста. Частина документів загинула під час Другої світової війни. 
+            Збереглися записи за 1875-1920 та окремі фрагменти пізніших років.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 5 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Покровська парафія, село Млинок (Дубровицький район)
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1840-1910
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, смерті
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Православна
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Парафія обслуговувала село Млинок та прилеглі хутори. Записи про хрещення майже повністю збереглися, 
+            книги про шлюби втрачені.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 6 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Успенська парафія, село Біле (Дубровицький район)
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1820-1905
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби, смерті
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Православна
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Одна з найбільших сільських парафій району. Обслуговувала декілька навколишніх сіл. 
+            Книги в задовільному стані, є пошкодження від вологи.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 7 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            Хрестовоздвиженська парафія, село Смолярі (Дубровицький район)
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1868-1920
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Православна
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Парафія заснована у 1868 році. Метричні книги збереглися частково, 
+            особливо цінні записи кінця XIX століття.
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Переглянути в архіві
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Запис 8 -->
+        <div class="record-item">
+          <h3 class="record-title">
+            ЗАГС Дубровицького району
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1919-1960
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Народження, шлюби, смерті
+            </div>
+            <div class="record-detail">
+              <strong>Тип:</strong> Цивільні записи актів
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Книги запису актів цивільного стану радянського періоду. Містять інформацію про всіх мешканців 
+            міста та району. Доступ обмежений через захист персональних даних (після 1960 року).
+          </p>
+          <a href="https://archives.gov.ua" target="_blank" class="record-link">
+            Інформація про доступ до записів
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- 
+        ============================================
+        ЯК ДОДАТИ НОВИЙ ЗАПИС:
+        
+        Скопіюйте цей блок і змініть дані:
+        
+        <div class="record-item">
+          <h3 class="record-title">
+            Назва парафії або установи
+          </h3>
+          <div class="record-details">
+            <div class="record-detail">
+              <strong>Роки:</strong> 1800-1900
+            </div>
+            <div class="record-detail">
+              <strong>Тип записів:</strong> Типи записів
+            </div>
+            <div class="record-detail">
+              <strong>Конфесія:</strong> Конфесія
+            </div>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Опис збереження, особливості, цінність записів
+          </p>
+          <a href="ПОСИЛАННЯ" target="_blank" class="record-link">
+            Текст посилання
+            <span>→</span>
+          </a>
+        </div>
+        
+        ============================================
+        -->
+
+      </div>
+
+      <!-- Додаткова інформація -->
+      <div style="margin-top: 4rem; padding: 2rem; background-color: white; border-radius: 2px;">
+        <h3>Потрібна допомога з дослідженням?</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          Якщо ви шукаєте інформацію про своїх предків, але не знаєте, з чого почати, 
+          або маєте питання щодо роботи з метричними книгами, зв'яжіться з нами. 
+          Ми допоможемо розібратися в архівних документах.
+        </p>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          <strong>Корисні ресурси:</strong><br>
+          • <a href="#">Посібник з генеалогічних досліджень</a><br>
+          • <a href="#">Як читати старі документи</a><br>
+          • <a href="#">Словник старовинних термінів</a>
+        </p>
+        <a href="contacts.html" class="hero-button">Зв'язатися з архівом</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="history.html">Історія Дубровиці</a></li>
+            <li><a href="photo-archive.html">Фотоархів</a></li>
+            <li><a href="metrychni-knyhy.html">Метричні книги</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:info@dubrovytsia-archive.org">info@dubrovytsia-archive.org</a></li>
+            <li><a href="tel:+380123456789">+38 (012) 345-67-89</a></li>
+            <li>вул. Центральна, 1<br>Дубровиця, Україна</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Додатково</h3>
+          <ul class="footer-links">
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Як користуватися архівом</a></li>
+            <li><a href="#">Політика приватності</a></li>
+            <li><a href="#">Передати матеріали</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Історичний портал Дубровиці. Всі права захищені.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
+<!-- ============================================
+     ІНСТРУКЦІЇ З РОБОТИ З МЕТРИЧНИМИ КНИГАМИ:
+     
+     1. ДОДАВАННЯ НОВИХ ЗАПИСІВ:
+        - Скопіюйте блок <div class="record-item">
+        - Змініть назву парафії
+        - Вкажіть роки охоплення
+        - Додайте опис збереження
+        - Додайте посилання на архів
+     
+     2. ПОШУК:
+        - Автоматично працює при введенні тексту
+        - Шукає по всьому тексту запису
+        - Миттєво показує/ховає результати
+     
+     3. КОРИСНА ІНФОРМАЦІЯ:
+        - Завжди вказуйте конфесію
+        - Зазначайте стан збереження
+        - Додавайте посилання на оригінали
+     
+     ============================================ -->

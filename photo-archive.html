@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Архів історичних фотографій міста Дубровиця">
+  <title>Фотоархів - Історичний портал Дубровиці</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <a href="index.html" class="site-logo">
+        <div class="site-logo-icon">Д</div>
+        <span class="site-title">Дубровиця</span>
+      </a>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="history.html" class="nav-link">Історія</a>
+        <a href="photo-archive.html" class="nav-link active">Фотоархів</a>
+        <a href="metrychni-knyhy.html" class="nav-link">Метричні книги</a>
+        <a href="contacts.html" class="nav-link">Контакти</a>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+    </div>
+  </header>
+
+  <!-- ============================================
+       ФОТОАРХІВ
+       ============================================ -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-label">Історичні фотографії</span>
+        <h1 class="section-title">Фотоархів Дубровиці</h1>
+        <p class="section-description">
+          Унікальна колекція історичних фотографій міста з різних періодів. 
+          Натисніть на фото для збільшення.
+        </p>
+      </div>
+
+      <!-- ============================================
+           ФІЛЬТРИ ЗА ПЕРІОДОМ
+           
+           ЯК ДОДАТИ НОВИЙ ФІЛЬТР:
+           1. Додайте кнопку з data-filter="категорія"
+           2. У фотографіях додайте data-category="категорія"
+           ============================================ -->
+      <div class="photo-filters">
+        <button class="filter-button active" data-filter="all">Всі фото</button>
+        <button class="filter-button" data-filter="before-1900">До 1900 року</button>
+        <button class="filter-button" data-filter="1900-1945">1900-1945</button>
+        <button class="filter-button" data-filter="1945-1991">1945-1991</button>
+        <button class="filter-button" data-filter="aero-bedzik">Аерофотознімки</button>
+      </div>
+
+      <!-- ============================================
+           ГАЛЕРЕЯ ФОТОГРАФІЙ
+           
+           ЯК ДОДАТИ НОВУ ФОТОГРАФІЮ:
+           1. Додайте фото в папку images/gallery/
+           2. Скопіюйте блок <div class="photo-item">
+           3. Змініть src, data-category та caption
+           
+           ВАЖЛИВО: data-category має відповідати 
+           data-filter у кнопках фільтрів
+           ============================================ -->
+      <div class="photo-grid">
+        
+        <!-- Фото 1 -->
+        <div class="photo-item" data-category="before-1900">
+          <img 
+            src="images/photo-1.jpg" 
+            alt="Наполеон Орда. «Костел Іоанна Хрестителя», 1870 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1553531087-42c9e00cf1c2?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Наполеон Орда. «Костел Іоанна Хрестителя», 1870 рік
+          </div>
+        </div>
+
+        <!-- Фото 2 -->
+        <div class="photo-item" data-category="before-1900">
+          <img 
+            src="images/gallery/photo-2.jpeg" 
+            alt="Наполеон Орда. «Двір Плятера», 1870 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Наполеон Орда. «Двір Плятера», 1870 рік
+          </div>
+        </div>
+
+        <!-- Фото 3 -->
+        <div class="photo-item" data-category="1900-1945">
+          <img 
+            src="images/gallery/photo-3.jpg" 
+            alt="Дубровиця, корчма, 1929 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Дубровиця, корчма, 1929 рік
+          </div>
+        </div>
+
+        <!-- Фото 4 -->
+        <div class="photo-item" data-category="1900-1945">
+          <img 
+            src="images/gallery/photo-4.jpg" 
+            alt="Дубровиця, дерев'яна хата, 1929 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Дубровиця, дерев'яна хата, 1929 рік
+          </div>
+        </div>
+
+        <!-- Фото 5 -->
+        <div class="photo-item" data-category="1900-1945">
+          <img 
+            src="images/gallery/photo-5.jpg" 
+            alt="Дубровиця, дерев'яна хата, 1929 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Дубровиця, дерев'яна хата, 1929 рік
+          </div>
+        </div>
+
+        <!-- Фото 6 -->
+        <div class="photo-item" data-category="1900-1945">
+          <img 
+            src="images/gallery/photo-6.jpg" 
+            alt="Дубровиця, дерев'яна хата, 1929 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1572177215152-32f247303126?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Дубровиця, дерев'яна хата, 1929 рік
+          </div>
+        </div>
+
+        <!-- Фото 7 -->
+        <div class="photo-item" data-category="1900-1945">
+          <img 
+            src="images/gallery/photo-7.jpg" 
+            alt="Церква Пресвятої Богородиці, 1929 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Церква Пресвятої Богородиці, 1929 рік
+          </div>
+        </div>
+
+        <!-- Фото 8 -->
+        <div class="photo-item" data-category="1945-1991">
+          <img 
+            src="images/gallery/photo-8.jpg" 
+            alt="Дубровицький Районний Будинок культури"
+            onerror="this.src='https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Дубровицький Районний Будинок культури
+          </div>
+        </div>
+
+        <!-- Фото 9 -->
+        <div class="photo-item" data-category="1945-1991">
+          <img 
+            src="images/gallery/photo-9.jpg" 
+            alt="День першого травня Дубровиця 1953 рік. Мала та велика(позаду) Синагоги"
+            onerror="this.src='https://images.unsplash.com/photo-1523810462-cb986d63bbdb?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            День першого травня Дубровиця 1953 рік. Мала та велика(позаду) Синагоги
+          </div>
+        </div>
+
+        <!-- Фото 10 -->
+        <div class="photo-item" data-category="aero-bedzik">
+          <img 
+            src="images/gallery/photo-10.jpg" 
+            alt="Аерофотозйомка Люфтваффе, 1944 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Аерофотозйомка Люфтваффе, 1944 рік
+          </div>
+        </div>
+
+        <!-- Фото 11 -->
+        <div class="photo-item" data-category="aero-bedzik">
+          <img 
+            src="images/gallery/photo-11.jpg" 
+            alt="Аерофотозйомка Люфтваффе, 1944 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1517646287270-a6655258a9b0?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Аерофотозйомка Люфтваффе, 1944 рік
+          </div>
+        </div>
+
+        <!-- Фото 12 -->
+        <div class="photo-item" data-category="after-1991">
+          <img 
+            src="images/gallery/photo-12.jpg" 
+            alt="Аерофотозйомка Люфтваффе, Станція Дубровиця, 1942 рік"
+            onerror="this.src='https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80'"
+          >
+          <div class="photo-caption">
+            Аерофотозйомка Люфтваффе, Станція Дубровиця, 1942 рік
+          </div>
+        </div>
+
+        <!-- 
+        ============================================
+        ЯК ДОДАТИ БІЛЬШЕ ФОТОГРАФІЙ:
+        
+        Скопіюйте цей блок і змініть дані:
+        
+        <div class="photo-item" data-category="КАТЕГОРІЯ">
+          <img 
+            src="images/gallery/ВАШ-ФАЙЛ.jpg" 
+            alt="Опис фото"
+          >
+          <div class="photo-caption">
+            Текст підпису до фото
+          </div>
+        </div>
+        
+        Категорії: before-1900, 1900-1945, 1945-1991, after-1991
+        ============================================
+        -->
+
+      </div>
+
+      <!-- Інформаційний блок -->
+      <div style="margin-top: 4rem; padding: 2rem; background-color: white; border-radius: 2px; text-align: center;">
+        <h3>Маєте історичні фотографії Дубровиці?</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          Ми будемо раді поповнити наш архів вашими матеріалами. Кожна фотографія — 
+          це частина історії, яку важливо зберегти для майбутніх поколінь.
+        </p>
+        <a href="contacts.html" class="hero-button">Зв'язатися з нами</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>Навігація</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="history.html">Історія Дубровиці</a></li>
+            <li><a href="photo-archive.html">Фотоархів</a></li>
+            <li><a href="metrychni-knyhy.html">Метричні книги</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Контакти</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:info@dubrovytsia-archive.org">info@dubrovytsia-archive.org</a></li>
+            <li><a href="tel:+380123456789">+38 (012) 345-67-89</a></li>
+            <li>вул. Центральна, 1<br>Дубровиця, Україна</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Додатково</h3>
+          <ul class="footer-links">
+            <li><a href="#">Часті запитання</a></li>
+            <li><a href="#">Як користуватися архівом</a></li>
+            <li><a href="#">Політика приватності</a></li>
+            <li><a href="#">Передати матеріали</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Історичний портал Дубровиці. Всі права захищені.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
+<!-- ============================================
+     ІНСТРУКЦІЇ З РОБОТИ З ФОТОАРХІВОМ:
+     
+     1. ДОДАВАННЯ НОВИХ ФОТОГРАФІЙ:
+        - Додайте фото в папку images/gallery/
+        - Скопіюйте блок <div class="photo-item">
+        - Змініть src="images/gallery/ваше-фото.jpg"
+        - Додайте data-category="період"
+        - Напишіть підпис у <div class="photo-caption">
+     
+     2. ЗМІНА ФІЛЬТРІВ:
+        - Знайдіть секцію <div class="photo-filters">
+        - Додайте/змініть кнопки
+        - data-filter має відповідати data-category у фото
+     
+     3. ФУНКЦІЇ:
+        - Клік на фото → збільшення (лайтбокс)
+        - Фільтри → показ тільки вибраного періоду
+        - Адаптивна сітка для всіх екранів
+     
+     ============================================ -->
